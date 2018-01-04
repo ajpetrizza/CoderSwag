@@ -12,7 +12,6 @@
     <customFonts key="customFonts">
         <array key="Avenir.ttc">
             <string>Avenir-Book</string>
-            <string>Avenir-Heavy</string>
         </array>
     </customFonts>
     <scenes>
@@ -30,43 +29,44 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fJq-dA-gop">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fJq-dA-gop">
                                 <rect key="frame" x="0.0" y="69.5" width="375" height="533.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="142" id="W9x-8W-z7y" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="142"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="140" id="W9x-8W-z7y" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W9x-8W-z7y" id="9nQ-7S-gLF">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="141.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="dKD-sE-N8U">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="141.5"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6T-MC-g0e">
-                                                    <rect key="frame" x="103.5" y="57" width="168" height="28"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="fZ2-DR-Hq2">
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="140"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="168" id="Sxp-RX-hlv"/>
-                                                        <constraint firstAttribute="height" constant="28" id="tGw-zl-CEb"/>
+                                                        <constraint firstAttribute="height" constant="140" id="efR-Tc-FCN"/>
+                                                        <constraint firstAttribute="width" constant="375" id="iMS-yi-uKm"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
-                                                    <color key="textColor" red="0.94915435670591863" green="1" blue="0.97160225691391966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqr-LS-ATr">
+                                                    <rect key="frame" x="150.5" y="63" width="74" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.94883823523816069" green="1" blue="0.99817104637785636" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="c6T-MC-g0e" firstAttribute="centerX" secondItem="9nQ-7S-gLF" secondAttribute="centerX" id="8Z3-Rf-K7g"/>
-                                                <constraint firstItem="dKD-sE-N8U" firstAttribute="top" secondItem="9nQ-7S-gLF" secondAttribute="top" id="HTL-5L-yE9"/>
-                                                <constraint firstItem="dKD-sE-N8U" firstAttribute="leading" secondItem="9nQ-7S-gLF" secondAttribute="leading" id="HvR-Uc-zAQ"/>
-                                                <constraint firstAttribute="trailing" secondItem="dKD-sE-N8U" secondAttribute="trailing" id="OVY-yE-7RN"/>
-                                                <constraint firstItem="c6T-MC-g0e" firstAttribute="centerY" secondItem="9nQ-7S-gLF" secondAttribute="centerY" id="Rgk-EM-FPP"/>
-                                                <constraint firstAttribute="bottom" secondItem="dKD-sE-N8U" secondAttribute="bottom" id="TML-L9-2q9"/>
+                                                <constraint firstItem="cqr-LS-ATr" firstAttribute="centerX" secondItem="9nQ-7S-gLF" secondAttribute="centerX" id="4Lw-3E-SlL"/>
+                                                <constraint firstItem="fZ2-DR-Hq2" firstAttribute="centerY" secondItem="9nQ-7S-gLF" secondAttribute="centerY" id="5NA-Wt-G9T"/>
+                                                <constraint firstItem="fZ2-DR-Hq2" firstAttribute="leading" secondItem="9nQ-7S-gLF" secondAttribute="leading" id="9MY-SP-lTp"/>
+                                                <constraint firstItem="cqr-LS-ATr" firstAttribute="centerY" secondItem="9nQ-7S-gLF" secondAttribute="centerY" id="EE9-0b-tNo"/>
+                                                <constraint firstAttribute="trailing" secondItem="fZ2-DR-Hq2" secondAttribute="trailing" id="Pqb-JF-2jf"/>
+                                                <constraint firstItem="fZ2-DR-Hq2" firstAttribute="top" secondItem="9nQ-7S-gLF" secondAttribute="top" constant="3" id="kXr-OV-NRg"/>
+                                                <constraint firstAttribute="bottom" secondItem="fZ2-DR-Hq2" secondAttribute="bottom" constant="3" id="yue-Mo-zHo"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="categoryImage" destination="dKD-sE-N8U" id="v8n-9O-hf6"/>
-                                            <outlet property="categoryTitle" destination="c6T-MC-g0e" id="99o-M6-wuh"/>
+                                            <outlet property="categoryImage" destination="fZ2-DR-Hq2" id="RJD-bf-uWU"/>
+                                            <outlet property="categoryTitle" destination="cqr-LS-ATr" id="fdy-QR-QDC"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
